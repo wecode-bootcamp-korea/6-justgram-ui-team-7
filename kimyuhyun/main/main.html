@@ -4,25 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>justGram_main</title>
     <link rel="stylesheet" href="main.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="common.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <div id = page>
-    <div class="topBox">
-      <div class="topContent" class="logo">
-        <div class="inputLogo">justgram</div>
-      </div>
-      <div class="topContent" class="search"></div>
-      <div class="topContent" class="icon"></div>
-    </div>
 
-    <div class="feedBox">
-      <div class="feedContents" class="feedAuthor"></div>
-      <div class="feedContents" class="feedPicture"></iv>
-      <div class="feedContents" class="feedIcon"></div>
-      <div class="feedContents" class="feedComment"></div>
+  <body>
+    <header class="=to-do header-wrapper">
+      <div class="vertical-center">
+        <img class="icon-resize" src="img.png" />
+        <span class="header-text">justgram</span>
+      </div>
+      <div>
+        <input class="vertical-center" placeholder="검색" />
+      </div>
+      <div class="vertical-center">
+        <img
+          class="custom-margin-left"
+          src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
+        />
+        <img
+          class="custom-margin-left"
+          src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+        />
+        <img
+          src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
+        />
+      </div>
+    </header>
+    <div class="to-do contents-wrapper">
+      <div class="to-do feed-container">
+        <div class="to-do feed-header"></div>
+        <div class="to-do feed-image"></div>
+        <div class="to-do feed-menu"></div>
+        <div class="to-do feed-comment"></div>
+      </div>
     </div>
-  </div>
   </body>
 </html>
