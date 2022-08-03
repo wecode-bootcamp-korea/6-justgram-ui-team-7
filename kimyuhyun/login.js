@@ -19,6 +19,10 @@ inputId.addEventListener("input", excute);
 
 inputPw.addEventListener("input", excute);
 
+buttonGet.addEventListener("submit", (event) => {
+  event.preventDefault;
+});
+
 // ? disable 사용 코드 수정 후 상기 logic 구현할 것!
 // let input1 = document.getElementsByClassName("inputUsername");
 // let input2 = document.getElementsByClassName("inputPassword");

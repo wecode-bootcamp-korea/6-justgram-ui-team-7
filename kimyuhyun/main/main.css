@@ -1,0 +1,32 @@
+#page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.topBox {
+  display: flex;
+  width: 1016px;
+  height: 60px;
+}
+
+.topContent {
+  display: flex;
+  width: 30%;
+  height: 80%;
+  justify-content: space-between;
+  background-color: aliceblue;
+}
+
+.inputLogo {
+  justify-content: center;
+  align-items: center;
+}
+
+.feedBox {
+  display: flex;
+  width: 70%;
+  height: 70%;
+  border: 3px solid grey;
+  justify-content: flex-end;
+}
