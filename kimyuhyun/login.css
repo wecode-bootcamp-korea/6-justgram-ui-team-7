@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "lobster";
+  src: url(source/Lobster-Regular.ttf);
+}
+body {
+  height: 100vh;
+  display: flex;
+}
+div.main {
+  align-items: center;
+  justify-content: center;
+  border: 0.1rem solid grey;
+  margin: auto;
+  width: 350px;
+  height: 396px;
+}
+h1 {
+  text-align: center;
+  font-family: lobster;
+  font-size: 45px;
+  position: relative;
+}
+div.container {
+  width: 348px;
+  height: 265px;
+}
+div.usernameBox {
+  margin-bottom: 10px;
+}
+div.passwordBox {
+  margin-bottom: 15px;
+}
+
+input {
+  margin: auto;
+  display: block;
+  width: 258px;
+  height: 36px;
+}
+/* ! width, height 크기가 적용 안됨 */
+
+#btn {
+  position: relative;
+  margin: auto;
+  display: block;
+  width: 266px;
+  height: 42px;
+  color: antiquewhite;
+  background-color: dodgerblue;
+  border: dodgerblue;
+  opacity: 0.5;
+}
+
+div.bottomText {
+  position: absolute;
+  top: 70px;
+  text-align: center;
+  position: relative;
+  left: auto;
+  color: dodgerblue;
+}
