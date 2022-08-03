@@ -38,3 +38,29 @@
   justify-content: center;
   margin-top: 80px;
 }
+
+.feed-container {
+  width: 700px;
+}
+
+.feed-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.feed-img-wrapper {
+  height: 700px;
+}
+
+.feed-img {
+  height: 100%;
+  width: 100%;
+}
+
+.feed-menu {
+}
+
+.feed-comment {
+}
