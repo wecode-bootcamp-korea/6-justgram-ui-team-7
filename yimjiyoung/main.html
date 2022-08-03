@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Spline+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>JUSTGRAM_Main</title>
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav class="nav">
+      <div class="nav_left">
+        <div id="insta-icon"><i class="fa-brands fa-instagram"></i></div>
+        <div id="division"></div>
+        <span class="justgram-title">Justgram</span>
+      </div>
+
+      <div class="nav_center">
+        <div id="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <input id="search" type="text" placeholder="검색" />
+      </div>
+
+      <div class="nav_right">
+        <img
+          src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
+          width="35px"
+          alt="탐색"
+        />
+        <img
+          src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+          width="35px"
+          alt="하트"
+        />
+        <img
+          src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
+          width="35px"
+          alt="마이"
+        />
+      </div>
+    </nav>
+
+    <!-- Feeds -->
+    <main>
+      <article class="feeds">
+        <div class="feeds-header">
+          <div class="feeds-header_left">
+            <div>
+              <img
+                src="img/나의 아바타.jpg"
+                id="profile-img"
+                alt="프로필 이미지"
+              />
+            </div>
+            <span class="nickname">roxylife</span>
+          </div>
+          <div class="feeds-header_right">
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+        </div>
+
+        <img
+          src="img/건강.jpg"
+          alt="피드 이미지"
+          id="feed-img"
+          width="400px"
+          height="500px"
+        />
+
+        <div class="feeds-icons">
+          <div class="feeds-icons_left">
+            <div><i class="fa-solid fa-heart" color="red"></i></div>
+            <div><i class="fa-regular fa-comment"></i></div>
+            <div><i class="fa-regular fa-share-from-square"></i></div>
+          </div>
+          <div class="feeds-icons_right">
+            <i class="fa-regular fa-bookmark"></i>
+          </div>
+        </div>
+
+        <div class="feeds-likes">
+          <div>
+            <img
+              src="img/나의 아바타.jpg"
+              id="profile-img"
+              alt="프로필 이미지"
+            />
+          </div>
+          <div>
+            <span class="nickname">roxylife</span>님 외 26명이 좋아합니다
+          </div>
+        </div>
+
+        <div class="feeds-comments">
+          <div class="user-comment">
+            <span class="nickname">junhan_yim</span> 오~~~~
+          </div>
+          <div class="user-comment">
+            <span class="nickname">gyoungmi_seo</span> 오~건강한 것들이네~
+          </div>
+          <div class="feed-time">5분 전</div>
+          <div class="write-comment">
+            <input type="text" placeholder="댓글 달기..." />
+            <button id="write-btn">게시</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="feeds">
+        <div class="feeds-header">
+          <div class="feeds-header_left">
+            <div>
+              <img
+                src="img/나의 아바타.jpg"
+                id="profile-img"
+                alt="프로필 이미지"
+              />
+            </div>
+            <span class="nickname">roxylife</span>
+          </div>
+          <div class="feeds-header_right">
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+        </div>
+
+        <img
+          src="img/손씻기.jpg"
+          alt="피드 이미지"
+          id="feed-img"
+          width="400px"
+          height="500px"
+        />
+
+        <div class="feeds-icons">
+          <div class="feeds-icons_left">
+            <div><i class="fa-solid fa-heart"></i></div>
+            <div><i class="fa-regular fa-comment"></i></div>
+            <div><i class="fa-regular fa-share-from-square"></i></div>
+          </div>
+          <div class="feeds-icons_right">
+            <i class="fa-regular fa-bookmark"></i>
+          </div>
+        </div>
+
+        <div class="feeds-likes">
+          <div>
+            <img
+              src="img/나의 아바타.jpg"
+              id="profile-img"
+              alt="프로필 이미지"
+            />
+          </div>
+          <div>
+            <span class="nickname">roxylife</span>님 외 10명이 좋아합니다
+          </div>
+        </div>
+
+        <div class="feeds-comments">
+          <div class="user-comment">
+            <span class="nickname">junhan_yim</span> 요즘 중요하지!!!
+          </div>
+          <div class="user-comment">
+            <span class="nickname">gyoungmi_seo</span> 광고같아~^^
+          </div>
+          <div class="feed-time">20분 전</div>
+          <div class="write-comment">
+            <input type="text" placeholder="댓글 달기..." />
+            <button id="write-btn">게시</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="feeds">
+        <div class="feeds-header">
+          <div class="feeds-header_left">
+            <div>
+              <img
+                src="img/나의 아바타.jpg"
+                id="profile-img"
+                alt="프로필 이미지"
+              />
+            </div>
+            <span class="nickname">roxylife</span>
+          </div>
+          <div class="feeds-header_right">
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+        </div>
+
+        <img
+          src="img/테이블.jpg"
+          alt="피드 이미지"
+          id="feed-img"
+          width="400px"
+          height="500px"
+        />
+
+        <div class="feeds-icons">
+          <div class="feeds-icons_left">
+            <div><i class="fa-solid fa-heart"></i></div>
+            <div><i class="fa-regular fa-comment"></i></div>
+            <div><i class="fa-regular fa-share-from-square"></i></div>
+          </div>
+          <div class="feeds-icons_right">
+            <i class="fa-regular fa-bookmark"></i>
+          </div>
+        </div>
+
+        <div class="feeds-likes">
+          <div>
+            <img
+              src="img/나의 아바타.jpg"
+              id="profile-img"
+              alt="프로필 이미지"
+            />
+          </div>
+          <div>
+            <span class="nickname">roxylife</span>님 외 5명이 좋아합니다
+          </div>
+        </div>
+
+        <div class="feeds-comments">
+          <div class="user-comment">
+            <span class="nickname">junhan_yim</span> 분위기 좋은데~
+          </div>
+          <div class="user-comment">
+            <span class="nickname">gyoungmi_seo</span> 오~ 괜찮네^^
+          </div>
+          <div class="feed-time">35분 전</div>
+          <div class="write-comment">
+            <input type="text" placeholder="댓글 달기..." />
+            <button id="write-btn">게시</button>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/61a136687a.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
