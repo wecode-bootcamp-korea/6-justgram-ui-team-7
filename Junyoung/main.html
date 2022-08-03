@@ -17,19 +17,85 @@
     />
   </head>
   <body>
+    <!-- 네비바 -->
     <div class="navbar">
       <div class="flex-row">
+        <!-- 네비바 왼쪽부분 -->
         <div class="header-block flex-row">
-          <div class="header-block"></div>
-          <div class="header-block"></div>
-        </div>
-        <div class="header-block">
-          <div>
-            <div></div>
+          <!-- 네비 왼쪽안에 왼쪽 -->
+          <div id="leftarea-icon" class="header-block">
+            <img
+              id="left-icon"
+              src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png"
+            />
+          </div>
+          <!-- 네비 왼쪽구역 가운데 -->
+          <div class="left-line"></div>
+          <!-- 네비 왼쪽구역 안의 오른쪽 -->
+          <div class="header-block">
+            <a id="leftarea-text">justgram</a>
           </div>
         </div>
+        <!-- 네비바 가운데 부분 -->
+        <div class="header-block searching-bar">
+          <!-- 검색바 컨테이너 -->
+          <div class="borderline2 flex-center">
+            <input id="searching" type="search" placeholder="검색" />
+          </div>
+        </div>
+        <!-- 네비바 오른쪽부분 -->
+        <div class="header-block div3icon">
+          <div class="borderline3">
+            <a
+              ><img
+                src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
+            /></a>
+          </div>
+          <div class="borderline3">
+            <a
+              ><img
+                src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+            /></a>
+          </div>
+          <div class="borderline3">
+            <a
+              ><img
+                src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <div class="header-block">3</div>
+    <!-- 피드 구역 -->
+    <div class="feed-container">
+      <!-- 피드 -->
+      <div class="feed">
+        <!-- 피드 내부 -->
+        <div class="feed-head">
+          <div>사진</div>
+          <div>아이디</div>
+          <div>더보기아이콘</div>
+        </div>
+        <div class="feed-photo">사진</div>
+        <div class="feed-menu">메뉴바</div>
+        <div class="feed-text">댓글</div>
+      </div>
+
+      <div class="feed">
+        <!-- 피드 내부 -->
+        <div class="feed-head">헤드</div>
+        <div class="feed-photo">사진</div>
+        <div class="feed-menu">메뉴바</div>
+        <div class="feed-text">댓글</div>
+      </div>
+
+      <div class="feed">
+        <!-- 피드 내부 -->
+        <div class="feed-head">헤드</div>
+        <div class="feed-photo">사진</div>
+        <div class="feed-menu">메뉴바</div>
+        <div class="feed-text">댓글</div>
       </div>
     </div>
   </body>
