@@ -22,7 +22,7 @@
 }
 
 .contents-divider {
-  margin-bottom: 200px;
+  margin-bottom: 10px;
 }
 
 .header-wrapper {
@@ -51,10 +51,10 @@
 }
 
 .contents-wrapper {
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 .feed-container {
@@ -96,6 +96,7 @@
 
 .feed-text {
   margin: 10px;
+  /* !수정 필요! */
 }
 .feed-text-like {
   margin-bottom: 8px;
@@ -106,10 +107,19 @@
 }
 
 .feed-comment {
+  display: flex;
   border-top: solid 1px gray;
-  height: 80px;
 }
 
 .feed-comment-text {
   padding: 10px 8px;
+}
+
+.comment-write-input {
+  flex: 1;
+}
+
+.comment-name {
+  font-weight: bold;
+  margin-right: 10px;
 }
