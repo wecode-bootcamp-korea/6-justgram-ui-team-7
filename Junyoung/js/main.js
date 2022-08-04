@@ -21,7 +21,7 @@ Array.from(commentInput).forEach((textInput, index) => {
       commentBtn[index].disabled = false;
       commentBtn[index].style.color = "#3eb0fc";
       commentBtn[index].style.border = "0.3px solid lightgray";
-      commentBtn[index].style.ccursor = "pointer";
+      commentBtn[index].style.cursor = "pointer";
     }
     //그렇지 않고 각 인풋태그의 값의 길이가 1보다 작다면
     else if (textInput.value.length < 1) {
