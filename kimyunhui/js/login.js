@@ -9,11 +9,13 @@ pwInput.addEventListener('keyup', check);
 function check(){
     if (idInput.value || pwInput.value) {
         loginButton.disabled = true;
-        loginButton.style.backgroundColor = "rgb(79, 167, 255)";
+        loginButton.classList.remove('button-color-before')
+        loginButton.classList.add('button-color-after');
         loginButton.style.cursor = "pointer";
       } else {
         loginButton.disabled = false;
-        loginButton.style.backgroundColor = "rgb(186, 220, 255)";
+        loginButton.classList.remove('button-color-after')
+        loginButton.classList.add('button-color-before');
         loginButton.style.cursor = "not-allowed";
       }
 
@@ -45,6 +47,6 @@ loginButton.addEventListener("submit", (event)=>{
 //로그인 버튼 클릭시
     event.preventDefault(); // 해당 기능을 꺼버리고
     //커스텀 로직
-    
+
 });
 */
