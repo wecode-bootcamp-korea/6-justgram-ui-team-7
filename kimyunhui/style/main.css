@@ -231,6 +231,8 @@ a{
     margin-bottom: 10px;
 }
 
-.right{
+.add-button{
     margin-right: 10px;
+    border: none;
+    background-color: white;
 }
