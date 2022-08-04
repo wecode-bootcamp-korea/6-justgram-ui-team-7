@@ -31,6 +31,10 @@ body {
   align-items: center;
 }
 
+.font-bold {
+  font-weight: bold;
+}
+
 .header-block {
   width: 100%;
   height: inherit;
@@ -218,14 +222,6 @@ body {
   color: #6868689a;
 }
 
-.writing-text {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-left: 15px;
-  font-size: 14px;
-}
-
 .feed ul {
   margin: 5px -10px;
 }
@@ -233,6 +229,10 @@ body {
 .feed ul li {
   font-size: 14px;
   list-style: none;
+}
+
+.nickname {
+  font-weight: bold;
 }
 
 .comment-like-img {

@@ -12,6 +12,7 @@ function btnEnable(event) {
   } else {
     btn.style.backgroundColor = "#a3e5f3";
     btn.disabled = true;
+    btn.style.cursor = "default";
   }
 }
 
