@@ -226,6 +226,15 @@ body {
   font-size: 14px;
 }
 
+.feed ul {
+  margin: 5px -10px;
+}
+
+.feed ul li {
+  font-size: 14px;
+  list-style: none;
+}
+
 .comment-like-img {
   width: 10px;
   padding-right: 20px;
