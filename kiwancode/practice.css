@@ -1,0 +1,19 @@
+.to-do {
+  border: 1px solid black;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 100px;
+}
+
+.header-text {
+  font-family: "Lobster", cursive;
+  font-size: 16px;
+}
+
+.contents-wrapper {
+  height: 100vh;
+}
