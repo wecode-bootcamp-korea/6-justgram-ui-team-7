@@ -49,12 +49,12 @@ Array.from(commentBtn).forEach((button) => {
 //클릭시 댓글 추가기능
 //버튼요소를 어레이로 변환 후 각 버튼의 값과 인덱스를 가져온다.
 Array.from(commentBtn).forEach((button, index) => {
-  //append하기위한 태그들을 만드는 과정
-  const createList = document.createElement("li");
-  const createNickname = document.createElement("span");
-  const createComment = document.createElement("span");
   //각 버튼에 클릭이벤트 등록
   button.addEventListener("click", () => {
+    //append하기위한 태그들을 만드는 과정
+    const createList = document.createElement("li");
+    const createNickname = document.createElement("span");
+    const createComment = document.createElement("span");
     //만약 버튼이 활성화 되어있는 상태라면
     if (button.disabled == false) {
       //Junyoung + 공백 이라는 내용을 가진 스팬태그를 만든다
