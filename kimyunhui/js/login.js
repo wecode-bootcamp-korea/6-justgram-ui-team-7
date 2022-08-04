@@ -41,8 +41,10 @@ function onInput(event){
 idInput.addEventListener('input', onInput);//감지할 요소에 이벤트
 pwInput.addEventListener('input', onInput);//감지할 요소에 이벤트
 
-loginButton.addEventListener('click', ()=>{
+loginButton.addEventListener("submit", (event)=>{
 //로그인 버튼 클릭시
-
+    event.preventDefault(); // 해당 기능을 꺼버리고
+    //커스텀 로직
+    
 });
 */
