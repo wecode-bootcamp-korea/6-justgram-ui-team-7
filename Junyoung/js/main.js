@@ -58,30 +58,36 @@ Array.from(commentBtn).forEach((button, index) => {
     const createList = document.createElement("li");
     const createNickname = document.createElement("span");
     const createComment = document.createElement("span");
+    const createImg = document.createElement("img");
     //만약 버튼이 활성화 되어있는 상태라면
     if (button.disabled == false) {
       //Junyoung + 공백 이라는 내용을 가진 스팬태그를 만든다
       createNickname.textContent = "Junyoung" + " ";
       //작성한 댓글내용을 가진 스팬태그를 생성한다.
       createComment.textContent = commentInput[index].value;
+      //좋아요 댓글이미지 생성
+      createImg.src = "./img/heart.png";
       //생성한 span태그에 nickname클래스를 추가시킨다
       createNickname.classList.add("nickname");
       //생성한 span태그에 comment-text클래스를 추가한다
       createComment.classList.add("comment-text");
-      //생성한 두 스팬태그를 li태그에 자식요소로 추가
+      //이미지에 클래스 추가
+      createImg.classList.add("comment-like-img");
+      //생성한 두 스팬태그 및 이미지를 li태그에 자식요소로 추가
       createList.appendChild(createNickname);
       createList.appendChild(createComment);
+      createList.appendChild(createImg);
       //각 ul태그에 li태그 자식요소로 추가
       commentArea[index].appendChild(createList);
       //내용 추가후 텍스트 초기화
       commentInput[index].value = "";
       //버튼도 비활성화
-      button.disabled = true;
+      commentBtn[index].disabled = true;
       //비활성화가 됐다면 비활성화에 맞는 스타일css 다시 적용
-      if (button.disabled == true) {
-        button.style.color = "#b6dffa";
-        button.style.border = "none";
-        button.style.cursor = "default";
+      if (commentBtn[index].disabled == true) {
+        commentBtn[index].style.color = "#b6dffa";
+        commentBtn[index].style.border = "none";
+        commentBtn[index].style.cursor = "default";
       }
     }
   });
@@ -96,19 +102,25 @@ Array.from(commentInput).forEach((textInput, index) => {
     const createList = document.createElement("li");
     const createNickname = document.createElement("span");
     const createComment = document.createElement("span");
+    const createImg = document.createElement("img");
     //만약 키업의 인자의 키코드가 엔터라면
     if (e.keyCode == 13) {
       //Junyoung + 공백 이라는 내용을 가진 스팬태그를 만든다
       createNickname.textContent = "Junyoung" + " ";
       //작성한 댓글내용을 가진 스팬태그를 생성한다.
       createComment.textContent = commentInput[index].value;
+      //좋아요 댓글이미지 생성
+      createImg.src = "./img/heart.png";
       //생성한 span태그에 nickname클래스를 추가시킨다
       createNickname.classList.add("nickname");
       //생성한 span태그에 comment-text클래스를 추가한다
       createComment.classList.add("comment-text");
-      //생성한 두 스팬태그를 li태그에 자식요소로 추가
+      //이미지에 클래스 추가
+      createImg.classList.add("comment-like-img");
+      //생성한 두 스팬태그 및 이미지를 li태그에 자식요소로 추가
       createList.appendChild(createNickname);
       createList.appendChild(createComment);
+      createList.appendChild(createImg);
       //각 ul태그에 li태그 자식요소로 추가
       commentArea[index].appendChild(createList);
       //내용 추가후 텍스트 초기화
