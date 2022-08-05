@@ -6,7 +6,24 @@ const commentWriteButton = document.getElementsByClassName(
 );
 const commentList = document.getElementsByClassName("feed-comment-list");
 
-console.log(Array.from(commentWriteButton));
+fetch("./comments.json")
+  .then((res) => res.json())
+  .then((data) => {
+    let commentArray = data.comments;
+    commentArray.forEach((comment) => {
+      for (let i = 0; i < commentArray.length; i++) {
+        const commentElem = document.createElement("div");
+        const nameSpan = document.createElement("span");
+        nameSpan.className = "comment-name";
+        nameSpan.textContent = comment.userName;
+
+        const content = comment.content;
+        commentElem.append(nameSpan, content);
+        commentList[i].append(commentElem);
+      }
+    });
+  });
+
 Array.from(commentWriteButton).forEach((button, index) => {
   button.addEventListener("click", () => {
     const content = commentWriteInput[index].value;
