@@ -76,7 +76,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 400px;
+  /* margin-right: 400px; */
 }
 
 .feed {
@@ -228,6 +228,10 @@ body {
 .nickname {
   font-weight: bold;
   padding-left: 15px;
+}
+
+.comment-text {
+  padding-left: 10px;
 }
 
 .comment-like-img {

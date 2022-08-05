@@ -1,0 +1,28 @@
+{
+  "feed_comment": [
+    {
+      "id": "1",
+      "name": "ear Ah",
+      "comment": "사진부터 장난질이냐",
+      "commentLike": true
+    },
+    {
+      "id": "2",
+      "name": "gone Kim",
+      "comment": "증거있어?",
+      "commentLike": true
+    },
+    {
+      "id": "3",
+      "name": "gwangRyul_Go",
+      "comment": "찌릿찌릿 우주선?",
+      "commentLike": false
+    },
+    {
+      "id": "4",
+      "name": "nine Ho",
+      "comment": "예림이 저 사진봐봐! 저거 우주선이야?",
+      "commentLike": true
+    }
+  ]
+}

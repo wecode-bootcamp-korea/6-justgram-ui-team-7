@@ -62,7 +62,7 @@ Array.from(commentBtn).forEach((button, index) => {
     //만약 버튼이 활성화 되어있는 상태라면
     if (button.disabled == false) {
       //Junyoung + 공백 이라는 내용을 가진 스팬태그를 만든다
-      createNickname.textContent = "Junyoung" + " ";
+      createNickname.textContent = "Junyoung";
       //작성한 댓글내용을 가진 스팬태그를 생성한다.
       createComment.textContent = commentInput[index].value;
       //좋아요 댓글이미지 생성
@@ -106,7 +106,7 @@ Array.from(commentInput).forEach((textInput, index) => {
     //만약 키업의 인자의 키코드가 엔터라면
     if (e.keyCode == 13) {
       //Junyoung + 공백 이라는 내용을 가진 스팬태그를 만든다
-      createNickname.textContent = "Junyoung" + " ";
+      createNickname.textContent = "Junyoung";
       //작성한 댓글내용을 가진 스팬태그를 생성한다.
       createComment.textContent = commentInput[index].value;
       //좋아요 댓글이미지 생성
