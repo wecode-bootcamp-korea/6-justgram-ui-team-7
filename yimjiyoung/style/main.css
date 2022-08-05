@@ -147,10 +147,13 @@ main {
   padding: 0 0 0 5px;
 }
 
+.feeds-comments {
+  margin-left: 10px;
+}
+
 .user-comment,
 .feed-time {
   position: relative;
-  left: 10px;
   padding-bottom: 5px;
 }
 
@@ -162,6 +165,7 @@ main {
 .feed-time {
   color: grey;
   font-size: 12px;
+  margin-left: 10px;
 }
 
 .write-comment {

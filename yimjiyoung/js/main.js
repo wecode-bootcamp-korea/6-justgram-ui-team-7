@@ -5,6 +5,30 @@ const USERID = 'roxylife'; // 댓글 아이디
 
 // writeBtn.disabled = true;
 
+fetch('./data/comments.json')
+  .then((res) => res.json())
+  .then((data) => {
+    // 데이터를 받아서 배열로 다시 할당하기
+    let commentArray = data.comments;
+    // 배열에 담긴 댓글을 하나하나 반복문 돌기
+    commentArray.forEach((comment) => {
+      // 먼저 userComments 반복문 돌면서 피드 하나하나에 댓글 하나씩 넣어주기
+      for (let i = 0; i < commentArray.length; i++) {
+        // 댓글을 넣을 div
+        let commentElem = document.createElement('div');
+        // 댓글 닉네임을 넣을 li
+        const childComment = document.createElement('span');
+        childComment.className = 'nickname';
+        childComment.textContent = comment.userName;
+        // 댓글 내용을 넣어주기
+        const content = comment.content;
+        commentElem.append(childComment, content);
+        // 피드 하나하나에 댓글 넣기
+        userComments[i].append(commentElem);
+      }
+    });
+  });
+
 // 댓글 입력 함수 작성
 Array.from(writeBtn).forEach((button, index) => {
   button.addEventListener('click', (e) => {
