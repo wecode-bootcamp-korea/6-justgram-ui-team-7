@@ -17,29 +17,39 @@ fetch('./data/comments.json')
         // 댓글을 넣을 div
         let commentElem = document.createElement('div');
         // 댓글 닉네임을 넣을 li
+<<<<<<< HEAD
         const childComment = document.createElement('span');
         childComment.className = 'nickname';
         childComment.textContent = comment.userName;
         // 댓글 내용을 넣어주기
         const content = comment.content;
-        commentElem.append(childComment, content);
+        commentElem.append(childComment, content); // 
+=======
+        const nameSpan = document.createElement('span');
+        nameSpan.className = 'feed-nickname';
+        nameSpan.textContent = comment.userName;
+        // 댓글 내용을 넣어주기
+        const content = comment.content;
+        commentElem.append(nameSpan, content);
+>>>>>>> Modify: 순서 정리
         // 피드 하나하나에 댓글 넣기
-        userComments[i].append(commentElem);
+        userComments[i].append(commentElem); // 
       }
     });
   });
 
 // 댓글 입력 함수 작성
-Array.from(writeBtn).forEach((button, index) => {
+Array.from(writeBtn).forEach((button, i) => {
   button.addEventListener('click', (e) => {
     e.preventDefault();
-    const content = writeInput[index].value;
-    const childComment = document.createElement('div');
-    childComment.className = 'user-comment';
-    childComment.innerHTML = `<span class="nickname">${USERID}</span> <span>${content}</span>`;
-
-    userComments[index].appendChild(childComment);
-    writeInput[index].value = '';
+    const content = writeInput[i].value;
+    const commentElem = document.createElement('div');
+    const nameSpan = document.createElement('span');
+    nameSpan.className = 'feed-nickname';
+    nameSpan.textContent = USERID;
+    commentElem.append(nameSpan, content);
+    userComments[i].appendChild(commentElem);
+    writeInput[i].value = '';
   });
 });
 
@@ -54,27 +64,5 @@ Array.from(writeInput).forEach((el, index) => {
       writeBtn[index].disabled = true;
       console.log('empty');
     }
-    // writeBtn[index].style.cursor = 'auto';
   });
 });
-
-// 입력칸 Enter 이벤트 등록
-// function onEnterKey(e) {
-//   if (writeInput.value !== '' && e.keyCode == 13) {
-//     writeComment();
-//   }
-// }
-
-// 게시 버튼 클릭 이벤트 등록
-// function onActiveBtn() {
-//   if (writeInput.value !== '') {
-//     writeBtn.disabled = false;
-//     writeBtn.style.cursor = 'pointer';
-//   } else {
-//     writeBtn.disabled = true;
-//     writeBtn.style.cursor = 'pointer';
-//   }
-// }
-
-// writeInput.addEventListener('keydown', onEnterKey);
-// writeInput.addEventListener('keydown', onActiveBtn);
