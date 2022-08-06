@@ -5,6 +5,38 @@ const commentArea = document.getElementsByClassName("comment-ul");
 const commentBtn = document.getElementsByClassName("comment-btn");
 //댓글창 인풋요소 가져오기
 const commentInput = document.getElementsByClassName("comment-input");
+
+//Mock data 받아서 피드에 뿌려주기
+const comment = document.getElementsByClassName("comment-ul");
+let comments_list;
+
+fetch("./DATA/comments.json", {
+  method: "get",
+})
+  .then((res) => res.json())
+  .then((data) => {
+    comments_list = data.feed_comment;
+    comments_list.forEach((value) => {
+      for (let i = 0; i < commentArea.length; i++) {
+        const li = document.createElement("li");
+        const nameSpan = document.createElement("span");
+        const textSpan = document.createElement("span");
+        const img = document.createElement("img");
+
+        nameSpan.textContent = value.name;
+        textSpan.textContent = value.comment;
+        img.src = "./img/heart.png";
+
+        nameSpan.className = "nickname";
+        textSpan.className = "comment-text";
+        img.className = "comment-like-img";
+
+        li.append(nameSpan, textSpan, img);
+        commentArea[i].appendChild(li);
+      }
+    });
+  });
+
 // 버튼 기본 비활성화
 Array.from(commentBtn).forEach((button) => {
   button.disabled = true;

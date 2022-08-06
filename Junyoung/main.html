@@ -205,7 +205,7 @@
           <!-- 피드설명 -->
           <div class="writing">
             <span class="nickname">cannon_mj</span>
-            <span>여유롭게 차안에서~~~</span>
+            <span>여유롭게 차안에서✌✌.......</span>
             <span class="more-text">더 보기</span>
           </div>
           <!-- 댓글 창 -->
@@ -286,7 +286,7 @@
           <!-- 피드설명 -->
           <div class="writing">
             <span class="nickname">cannon_mj</span>
-            <span>흐음 풀냄새~~</span>
+            <span>흐음 풀냄새~~...</span>
             <span class="more-text">더 보기</span>
           </div>
           <!-- 댓글 창 -->
@@ -315,33 +315,4 @@
     </div>
   </body>
   <script type="text/javascript" src="/js/main.js"></script>
-  <script>
-    const comment = document.getElementsByClassName("comment-ul");
-    let comments_list
-    
-    fetch("./DATA/comments.json",{
-      method : "get"
-    })
-    .then ((res) => res.json())
-    .then((data) => { console.log(data)
-      comments_list = data.feed_comment;
-      comments_list.forEach(value => {
-        const li = document.createElement("li");
-        const nameSpan = document.createElement("span")
-        const textSpan = document.createElement("span")
-        const img = document.createElement("img")
-
-        nameSpan.textContent = value.name
-        textSpan.textContent = value.comment
-        img.src = "./img/heart.png"
-
-        nameSpan.classList.add('nickname')
-        textSpan.classList.add('comment-text')
-        img.classList.add('comment-like-img')
-
-        li.append(nameSpan,textSpan,img)
-        comment[0].append(li)
-      });
-    });
-  </script>
 </html>
