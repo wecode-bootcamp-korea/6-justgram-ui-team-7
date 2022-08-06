@@ -17,11 +17,6 @@ fetch('./data/comments.json')
         // 댓글을 넣을 div
         let commentElem = document.createElement('div');
         // 댓글 닉네임을 넣을 li
-        const childComment = document.createElement('span');
-        childComment.className = 'nickname';
-        childComment.textContent = comment.userName;
-        // 댓글 내용을 넣어주기
-        commentElem.append(childComment, content); //
         const nameSpan = document.createElement('span');
         nameSpan.className = 'feed-nickname';
         nameSpan.textContent = comment.userName;
@@ -29,7 +24,7 @@ fetch('./data/comments.json')
         const content = comment.content;
         commentElem.append(nameSpan, content);
         // 피드 하나하나에 댓글 넣기
-        userComments[i].append(commentElem); //
+        userComments[i].append(commentElem);
       }
     });
   });
