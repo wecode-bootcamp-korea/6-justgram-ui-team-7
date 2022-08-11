@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>justgram</title>
+    <link
+      href="https://cdn-icons.flaticon.com/png/512/4138/premium/4138124.png?token=exp=1659340352~hmac=2e9c85889b6c5b3ce0c9b3822c3f07ed"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- 네비바 -->
+    <nav class="navbar">
+      <!-- 네비바 왼쪽부분 -->
+      <div class="header-block flex-row">
+        <!-- 네비 왼쪽안에 왼쪽 -->
+        <div class="header-block leftarea-icon">
+          <img class="left-icon" src="img/instagram.png" />
+        </div>
+        <!-- 네비 왼쪽구역 가운데 -->
+        <div class="left-line"></div>
+        <!-- 네비 왼쪽구역 안의 오른쪽 -->
+        <div class="header-block">
+          <a class="leftarea-text">justgram</a>
+        </div>
+      </div>
+      <!-- 네비바 가운데 부분 -->
+      <div class="header-block searching-bar">
+        <!-- 검색바 컨테이너 -->
+        <div class="borderline2 flex-center">
+          <input class="searching" type="search" placeholder="검색" />
+        </div>
+      </div>
+      <!-- 네비바 오른쪽부분 -->
+      <div class="header-block div3icon">
+        <div class="borderline3">
+          <a
+            ><img
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
+          /></a>
+        </div>
+        <div class="borderline3">
+          <a
+            ><img
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+          /></a>
+        </div>
+        <div class="borderline3">
+          <a
+            ><img
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
+          /></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 피드 구역 -->
+    <div class="feed-container">
+      <!-- 피드 -->
+      <div class="feed">
+        <!-- 피드 내부 -->
+        <div class="feed-head">
+          <!-- 피드헤드의 사진 아이디칸 -->
+          <div class="feed-left">
+            <div class="align-center">
+              <img src="/img/user.png"  class="profileimg"/>
+            </div>
+            <div class="align-center">
+              <span class="profile-id">profile</span>
+            </div>
+          </div>
+          <!-- 피드헤드의 더보기칸 -->
+          <div class="feed-right">
+            <div><img src="/img/more.png"  class="moreimg"/></div>
+          </div>
+        </div>
+        <!-- 피드 사진칸 -->
+        <div class="feed-photo">
+          <img
+            class="photo"
+            src="https://images.unsplash.com/photo-1659482023691-04d925fb35fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+          />
+        </div>
+        <!-- 피드 메뉴 -->
+        <div class="feed-menu">
+          <div class="menu-icon-div">
+            <!-- 피드 메뉴 좌측 아이콘 -->
+            <img class="menu-left-icon" src="/img/heart1.png" />
+            <img class="menu-left-icon" src="/img/chat.png" />
+            <img class="menu-left-icon" src="/img/share.png" />
+          </div>
+          <!-- 피드메뉴 우측 아이콘 -->
+          <div class="menu-icon-div">
+            <img class="menu-right-icon" src="/img/mark.png" />
+          </div>
+        </div>
+        <!-- 피드 댓글부분 -->
+        <div class="feed-text">
+          <!-- 좋아합니다 부분 -->
+          <div class="like-text">
+            <!-- 프로필이미지와 텍스트 -->
+            <img class="text-img" src="/img/user.png" />
+            <span class="nickname"
+              >junyoung</span>님 외 <span class="font-bold">10명</span>이
+              좋아합니다</span
+            >
+          </div>
+          <!-- 피드설명 -->
+          <div class="writing">
+            <span class="nickname">cannon_mj</span>
+            <span>위워크에서 진행한 우주선 클래스...</span>
+            <span class="more-text">더 보기</span>
+          </div>
+          <!-- 댓글 창 -->
+          <ul class="comment-ul">
+            <li>
+            </li>
+          </ul>
+          <!-- 시간표시 -->
+          <div class="text-time">
+            <span>42분 전</span>
+          </div>
+          <!-- 댓글인풋 -->
+          <div class="comment-input-container">
+            <div class="comment-input-width">
+              <input
+                class="comment-input"
+                type="text"
+                placeholder="댓글 달기..."
+              />
+            </div>
+            <!-- 버튼인풋 -->
+            <div class="comment-btn-container">
+              <button class="comment-btn" disabled>게시</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feed-container">
+      <!-- 피드 -->
+      <div class="feed">
+        <!-- 피드 내부 -->
+        <div class="feed-head">
+          <!-- 피드헤드의 사진 아이디칸 -->
+          <div class="feed-left">
+            <div class="align-center">
+              <img src="/img/user.png"  class="profileimg"/>
+            </div>
+            <div class="align-center">
+              <span class="profile-id">profile</span>
+            </div>
+          </div>
+          <!-- 피드헤드의 더보기칸 -->
+          <div class="feed-right">
+            <div><img src="/img/more.png"  class="moreimg"/></div>
+          </div>
+        </div>
+        <!-- 피드 사진칸 -->
+        <div class="feed-photo">
+          <img
+            class="photo"
+            src="https://images.unsplash.com/photo-1659596357498-70e7c8381b26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+          />
+        </div>
+        <!-- 피드 메뉴 -->
+        <div class="feed-menu">
+          <div class="menu-icon-div">
+            <!-- 피드 메뉴 좌측 아이콘 -->
+            <img class="menu-left-icon" src="/img/heart1.png" />
+            <img class="menu-left-icon" src="/img/chat.png" />
+            <img class="menu-left-icon" src="/img/share.png" />
+          </div>
+          <!-- 피드메뉴 우측 아이콘 -->
+          <div class="menu-icon-div">
+            <img class="menu-right-icon" src="/img/mark.png" />
+          </div>
+        </div>
+        <!-- 피드 댓글부분 -->
+        <div class="feed-text">
+          <!-- 좋아합니다 부분 -->
+          <div class="like-text">
+            <!-- 프로필이미지와 텍스트 -->
+            <img class="text-img" src="/img/user.png" />
+            <span class="nickname"
+              >gil_dong</span>님 외 <span class="font-bold">25명</span>이
+              좋아합니다</span
+            >
+          </div>
+          <!-- 피드설명 -->
+          <div class="writing">
+            <span class="nickname">cannon_mj</span>
+            <span>여유롭게 차안에서✌✌.......</span>
+            <span class="more-text">더 보기</span>
+          </div>
+          <!-- 댓글 창 -->
+          <ul class="comment-ul">
+          </ul>
+          <!-- 시간표시 -->
+          <div class="text-time">
+            <span>1분 전</span>
+          </div>
+          <!-- 댓글인풋 -->
+          <div class="comment-input-container">
+            <div class="comment-input-width">
+              <input
+                class="comment-input"
+                type="text"
+                placeholder="댓글 달기..."
+              />
+            </div>
+            <!-- 버튼인풋 -->
+            <div class="comment-btn-container">
+              <button class="comment-btn" disabled>게시</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feed-container">
+      <!-- 피드 -->
+      <div class="feed">
+        <!-- 피드 내부 -->
+        <div class="feed-head">
+          <!-- 피드헤드의 사진 아이디칸 -->
+          <div class="feed-left">
+            <div class="align-center">
+              <img src="/img/user.png"  class="profileimg"/>
+            </div>
+            <div class="align-center">
+              <span class="profile-id">profile</span>
+            </div>
+          </div>
+          <!-- 피드헤드의 더보기칸 -->
+          <div class="feed-right">
+            <div><img src="/img/more.png"  class="moreimg"/></div>
+          </div>
+        </div>
+        <!-- 피드 사진칸 -->
+        <div class="feed-photo">
+          <img
+            class="photo"
+            src="https://images.unsplash.com/photo-1659537854482-0f7771027ead?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+          />
+        </div>
+        <!-- 피드 메뉴 -->
+        <div class="feed-menu">
+          <div class="menu-icon-div">
+            <!-- 피드 메뉴 좌측 아이콘 -->
+            <img class="menu-left-icon" src="/img/heart1.png" />
+            <img class="menu-left-icon" src="/img/chat.png" />
+            <img class="menu-left-icon" src="/img/share.png" />
+          </div>
+          <!-- 피드메뉴 우측 아이콘 -->
+          <div class="menu-icon-div">
+            <img class="menu-right-icon" src="/img/mark.png" />
+          </div>
+        </div>
+        <!-- 피드 댓글부분 -->
+        <div class="feed-text">
+          <!-- 좋아합니다 부분 -->
+          <div class="like-text">
+            <!-- 프로필이미지와 텍스트 -->
+            <img class="text-img" src="/img/user.png" />
+            <span class="nickname"
+              >grass_Kim</span>님 외 <span class="font-bold">88명</span>이
+              좋아합니다</span
+            >
+          </div>
+          <!-- 피드설명 -->
+          <div class="writing">
+            <span class="nickname">cannon_mj</span>
+            <span>흐음 풀냄새~~...</span>
+            <span class="more-text">더 보기</span>
+          </div>
+          <!-- 댓글 창 -->
+          <ul class="comment-ul">
+          </ul>
+          <!-- 시간표시 -->
+          <div class="text-time">
+            <span>1일 전</span>
+          </div>
+          <!-- 댓글인풋 -->
+          <div class="comment-input-container">
+            <div class="comment-input-width">
+              <input
+                class="comment-input"
+                type="text"
+                placeholder="댓글 달기..."
+              />
+            </div>
+            <!-- 버튼인풋 -->
+            <div class="comment-btn-container">
+              <button class="comment-btn" disabled>게시</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="/js/main.js"></script>
+</html>

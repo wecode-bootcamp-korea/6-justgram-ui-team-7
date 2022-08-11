@@ -1,0 +1,28 @@
+{
+  "feed_comment": [
+    {
+      "id": "1",
+      "name": "ear Ah",
+      "comment": "사진부터 장난질이냐",
+      "commentLike": true
+    },
+    {
+      "id": "2",
+      "name": "gone Kim",
+      "comment": "증거있어?",
+      "commentLike": true
+    },
+    {
+      "id": "3",
+      "name": "gwangRyul_Go",
+      "comment": "돈벌자고 하는겁니까 재밌자고하는거지 안그래요?",
+      "commentLike": false
+    },
+    {
+      "id": "4",
+      "name": "nine Ho",
+      "comment": "예림이 내가 예림이 때문에 인생을 다시a 느껴!",
+      "commentLike": true
+    }
+  ]
+}
